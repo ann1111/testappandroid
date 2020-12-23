@@ -1,0 +1,157 @@
+.fa {
+    font-family: "FontAwesome";
+}
+
+.header{
+    font-family: Poppins;
+    /*background-color: #059AFF;*/
+    background-image:url('~/images/Background3.png');
+    background-position:center top;
+    background-size: cover;
+    background-repeat: no-repeat;  
+   /* padding-bottom: 16px; */ 
+   height: 100%;
+    
+}
+
+
+.page-content .page-placeholder {
+    color: #D7D7D7;
+    font-size: 20;
+    vertical-align: center;
+    horizontal-align: center;
+}
+.page-content .page-icon {
+    font-size: 72;
+    vertical-align: top;
+    horizontal-align: center;
+    color: #D7D7D7;
+    margin-top: 20%;
+}
+
+.sidedrawer {
+    margin-bottom: -100;
+}
+.sidedrawer-list-item-icon,.sidedrawer-list-item{
+    color: #fff;
+    height: 37;
+}
+.sidedrawer.sidedrawer-left {
+   /* background-color: #009CF5;*/
+	  font-family: Poppins;
+    /*background-color: #059AFF;*/
+   /* background-image:url('~/images/Bluebackground_menu.jpg');
+    background-position:center top;
+    background-size: cover;
+    background-repeat: no-repeat;  */
+   /* padding-bottom: 16px; */ 
+   height: 100%;
+}
+.sidedrawer.sidedrawer-left .sidedrawer-header-image {
+    color: #fff;
+    height: 60;
+    width: 60;
+    font-size: 60;
+    padding: 0;
+    margin-bottom: 5;
+    margin-top: 20;
+}
+.sidedrawer.sidedrawer-left .footnote {
+    color: rgba(0,0,0,0.5);
+}
+.sidedrawer .sidedrawer-header {
+    background-color:transparent;
+}
+.sidedrawer .sidedrawer-header .sidedrawer-header-brand {
+    color: #fff;
+}
+.sidedrawer .sidedrawer-content{ 
+    background-color: transparent;
+	margin-left:50px;
+}
+.sidedrawer .sidedrawer-content .sidedrawer-list-item{
+    padding-left: 15;
+	font-size:14px;
+}
+.sidedrawer .sidedrawer-content .sidedrawer-list-item Label {
+    vertical-align: center;
+    color: #fff;
+}
+.sidedrawer .sidedrawer-content .sidedrawer-list-item .fa {
+    width: 20;
+    margin-right: 10;
+}
+.sidedrawer .sidedrawer-content .sidedrawer-list-item.selected {
+    background-color: #fff;
+}
+.sidedrawer .sidedrawer-content .sidedrawer-list-item.selected Label {
+    color:#fff;
+}
+
+ 
+ /****Modal ***/
+ .modal {
+    height: 70%;
+}
+.card-title {
+  text-align: center;
+  text-transform: uppercase;
+  color: #0F1E39;
+  font-family: Passion, PassionOne, PassionOne-Regular;
+  font-size: 30;
+}
+
+
+.card {
+	border-radius: 20;
+	margin: 12;
+    padding: 10;
+	background-color: #E3E9F8;
+    color: #131636;
+    height: 50%;
+}
+
+.close {
+    font-size: 15;
+    color: #131636;
+}
+
+    .list-item-meaning {
+        font-size: 15;
+        font-family: Nunito, NunitoSans, NunitoSans-Regular;
+        color: #131636;
+
+    }
+    .list-item {
+        margin: 3;
+        padding: 5, 12;
+        color: black;
+        background-color: #E3E9F8;
+        font-size: 15;
+        border-radius: 10;
+    }
+
+    .list-item-name {
+        font-size: 22;
+        font-family: Passion, PassionOne, PassionOne-Regular;
+    }
+
+    .emoji_window {
+        height: 80;
+        width: 80;
+        margin-bottom: 40;
+    }
+
+
+    .meaning-card {
+        margin: 10;
+        padding: 5;
+    }
+
+    .arrow {
+        margin-right: 5;
+    }
+
+    .arrow2 {
+        margin-right: 5;
+    }

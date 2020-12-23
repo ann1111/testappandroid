@@ -1,0 +1,78 @@
+<GridLayout rows="auto,*,auto" backgroundColor="#F0F1F4">
+    <StackLayout row="0" scrollBarIndicatorVisible="false" paddingBottom="10">
+        <GridLayout rows="auto">
+            <GridLayout row="0" rows="*" class="header">
+                <GridLayout row="0" rows="*" columns="*,auto,*" padding="15"
+                    paddingBottom="0px">
+                    <Label row="0" col="0" class="fa drwawerstyle" style="color:white"
+                        text="&#xf053;" borderWidth="" borderColor="transparent"
+                        backgroundColor="transparent" fontSize="20" (tap)="onDrawerButtonTap()"
+                        horizontalAlignment="left" textAlignment="left" ></Label>
+                    <Label row="0" col="1" class="fa" style="color:white;text-transform:capitalize;" 
+                        text="Free Trial Lessons"  backgroundColor="transparent" horizontalAlignment="center" fontWeight="bold" fontSize="24"  textAlignment="center" textWrap="true"></Label>
+                  
+                </GridLayout>
+                <!--GridLayout row="1" rows="*" padding="1" marginLeft="9px"
+                    paddingLeft="19px" paddingTop="15px">  
+                    <Label row="0" text="On Boarding" class="title sf"
+                        textAlignment="left" horizontalAlignment="left"></Label>
+                </GridLayout-->
+            </GridLayout>
+        </GridLayout>
+    </StackLayout>
+    <GridLayout row="1" backgroundColor="#F0F1F4" marginTop="5px">
+	<StackLayout>
+        <ScrollView class="page" verticalAlignment="top">
+            <GridLayout>
+                <StackLayout  class="home-panel" backgroundColor="#F0F1F4" verticalAlignment="top" style="height:95%;margin-bottom:10"  sdkExampleTitle sdkToggleNavButton>	
+						
+						<StackLayout class="itemTemplateStackLayout" width="100%" orientation="vertical" width="100%" height="98%" margin="10" marginBottom="1" marginTop="9" backgroundColor="#ffffff" verticalAlignment="top"  borderRadius="15px" androidElevation="3"   class="card">
+                        <ScrollView height="100%">
+						<StackLayout orientation="vertical" width="100%">
+
+						<StackLayout padding="10px" padding="35px" width="100%"   style="padding-bottom:5px;border-bottom: 1px dotted #000;border-color:#000;/*border-width: 0 0 1 0;*/border-style: dashed;">
+						<StackLayout orientation="vertical" width="100%">
+						<Label text="Coming Soon" fontSize="17px" color="#4494B4" textWrap="true"  fontWeight="500" marginBottom="3px"></Label>
+					
+						</StackLayout>
+						<Image src="~/images/swimlesson.jpg" marginTop="15" marginBottom="5" width="100%"></Image>					
+						</StackLayout>
+						
+						<StackLayout padding="10px" padding="35px" width="100%"   style="padding-bottom:5px;border-bottom: 1px dotted #000;border-color:#000;border-style: dashed;">
+						<Label text="You are never too old to learn!" textAlignment="left" fontSize="16px" color="#4494B4" fontWeight="500" marginBottom="4px"></Label>
+						<Label text="The swimming lessons for adults are given in small groups. Adults quickly learn the basics of swimming under the guidance of an expert instructor. It is even possible, after all these years, to get an A, B or C diploma!" style="text-align:justify;" fontSize="12px" textAlignment="left"  color="#3C3C3C" textWrap="true" fotnWeight="bold" marginBottom="4"></Label>
+						<Label text="Not only beginners can take swimming lessons with us, advanced players can also improve their swimming skills during the swimming lessons! Are you such a typical swimmer who only jumps into the pool during your holiday, but do you really want to work on your swimming techniques? Then you are at the right place at Zwemschool Amsterdam." style="text-align:justify;" fontSize="12px" textAlignment="left"  color="#3C3C3C" textWrap="true" fotnWeight="bold" marginBottom="8"></Label>
+	
+						
+		
+						
+						<Image src="~/images/Zwemschool-Amsterdam-Locatie.jpg" marginTop="15" marginBottom="5" width="100%"></Image>	
+						<Image src="~/images/KNZB-Zwemschool-Amsterdam.png" marginTop="15" marginBottom="5" width="100%"></Image>							
+						
+						</StackLayout>						
+						</StackLayout>
+						</ScrollView>						
+						</StackLayout>
+				</StackLayout>
+            </GridLayout>
+        </ScrollView>
+		</StackLayout>
+		<ActivityIndicator [busy]="processing" width="42" height="42" rowSpan="3"></ActivityIndicator>
+    </GridLayout>
+
+<!--GridLayout row="2" height="40" verticalAlignment="bottom" class="boring"  androidElevation="4" >
+	<StackLayout orientation="horizontal"  height="55">
+	<StackLayout width="33.33%" horizontalAlignment="center" verticalAlignment="center" textAlignment="center">
+	 <Image  src="~/images/homenew.png" marginTop="5%"  (tap)="getdashboard()"
+                    textAlignment="center" width="17" height="16"></Image>
+	</StackLayout>
+	<StackLayout width="33.33%" horizontalAlignment="center" verticalAlignment="center" textAlignment="center">
+  
+	</StackLayout>
+	<StackLayout width="33.33%" horizontalAlignment="center" verticalAlignment="center" textAlignment="center" [visibility]="input.visiblemdesk">
+          
+	</StackLayout>
+	</StackLayout>
+</GridLayout-->
+
+</GridLayout>

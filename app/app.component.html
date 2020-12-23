@@ -1,0 +1,75 @@
+<!--
+RadSideDrawer is a UI component part of the Progress NativeScript UI set of components.
+Learn more about the RadSideDrawer UI component and how it can be customized in this documentation article:
+http://docs.telerik.com/devtools/nativescript-ui/Controls/NativeScript/SideDrawer/getting-started
+-->
+<RadSideDrawer class="header" drawerTransition="PushTransition" gesturesEnabled="true">
+	<GridLayout tkDrawerContent rows="auto, *" class="sidedrawer sidedrawer-left">
+		<StackLayout row="0" class="sidedrawer-header" width="80%" marginTop="55">
+			<!--Label class="sidedrawer-header-image fa" text="&#xf2bd;"></Label-->
+			<Image src="~/images/logo.png" borderRadius="20" width="90" height="100%"></Image>
+			<Label class="sidedrawer-header-brand" text=""   textAlignment="center"></Label>
+            <Label class="footnote" text=""   textAlignment="center"></Label>
+        </StackLayout>
+
+        <ScrollView row="1">
+            <StackLayout>
+                <StackLayout class="sidedrawer-content">
+                    <GridLayout columns="auto, *" class="sidedrawer-list-item" (tap)="gethome()">
+                        <Label col="0"  text="&#xf015;" class="fa"></Label>
+                        <Label col="1" text="Home" 
+                            class="p-r-10"></Label>
+                    </GridLayout>
+                    <GridLayout columns="auto, *" class="sidedrawer-list-item" (tap)="getzwemschool()">
+                        <Label col="0" text="&#xf2bd;" class="fa"></Label>
+                        <Label col="1" text="Zwemschool"  class="p-r-10"></Label>
+                    </GridLayout>	
+                    <GridLayout columns="auto, *" class="sidedrawer-list-item" (tap)="getswimminglesson()">
+                        <Label col="0" text="&#xf007;" class="fa"></Label>
+                        <Label col="1" text="Swimming Lessons" class="p-r-10"></Label>
+                    </GridLayout>
+                    <GridLayout columns="auto, *" class="sidedrawer-list-item" (tap)="getfreetriallesson()">
+                        <Label col="0" text="&#xf022;" class="fa"></Label>
+                        <Label col="1" text="Free Trial Lesson" class="p-r-10"></Label>
+                    </GridLayout>
+                    <GridLayout columns="auto, *" class="sidedrawer-list-item"  (tap)="getparentslogin()">
+                        <Label col="0" text="&#xf005;" class="fa"></Label>
+                        <Label col="1" text="Parents Login" class="p-r-10"></Label>
+                    </GridLayout>
+					 <GridLayout columns="auto, *" class="sidedrawer-list-item"  (tap)="getrequestinfo()">
+                        <Label col="0" text="&#xf005;" class="fa"></Label>
+                        <Label col="1" text="Request Info." class="p-r-10"></Label>
+                    </GridLayout>
+					 <GridLayout columns="auto, *" class="sidedrawer-list-item"  (tap)="getfaq()">
+                        <Label col="0" text="&#xf005;" class="fa"></Label>
+                        <Label col="1" text="FAQ" class="p-r-10"></Label>
+                    </GridLayout>
+					 <GridLayout columns="auto, *" class="sidedrawer-list-item"  (tap)="getcontactinfo()">
+                        <Label col="0" text="&#xf005;" class="fa"></Label>
+                        <Label col="1" text="Contact Info." class="p-r-10"></Label>
+                    </GridLayout>
+					
+                    <GridLayout columns="auto, *" class="sidedrawer-list-item">
+                        <Label col="0" text=""></Label>
+                        <Label col="1" text="" class="p-r-10" text="Close Menu"
+                            padding="10" style="horizontal-align: center"
+                            (tap)="onCloseDrawerTap()" color="silver"> </Label>
+                    </GridLayout>
+                    <GridLayout columns="auto, *" class="sidedrawer-list-item">
+                        <Label col="0" text=""></Label>
+                        <Label col="1" text="" class="p-r-10"></Label>
+                    </GridLayout>
+                    <GridLayout columns="auto, *" class="sidedrawer-list-item">
+                        <Label col="0" text=""></Label>
+                        <Label col="1" text="" class="p-r-10"></Label>
+                    </GridLayout>
+                    <GridLayout columns="auto, *" class="sidedrawer-list-item">
+                        <Label col="0" text=""></Label>
+                        <Label col="1" text="" class="p-r-10"></Label>
+                    </GridLayout>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </GridLayout>
+    <page-router-outlet tkMainContent class="page page-content"></page-router-outlet>
+</RadSideDrawer>

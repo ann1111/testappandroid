@@ -1,0 +1,304 @@
+<GridLayout rows="auto, *, auto" backgroundColor="#F0F1F4">
+    <ScrollView row="0" scrollBarIndicatorVisible="false" paddingBottom="10">
+        <GridLayout rows="auto">
+            <GridLayout row="0" rows="*, *, *" class="header">
+                <GridLayout row="0" rows="*" columns="auto,auto,*,*" padding="15"
+                    paddingBottom="0px">
+                    <Label row="0" col="0" class="fa drwawerstyle" style="color:white"
+                        text="&#xf0c9;" borderWidth="" borderColor="transparent"
+                        backgroundColor="transparent" fontSize="20" (tap)="onDrawerButtonTap()"
+                        horizontalAlignment="left" textAlignment="left" width="20%"></Label>
+					<Image src="~/images/logo-header-website.jpg" row="0" col="1" width="50%" borderRadius="5"></Image>
+                    <Label row="0" col="3" class="fa drwawerstyle" style="color:white"
+                        text="&#xf0a2;" borderWidth="" borderColor="transparent"
+                        backgroundColor="transparent" fontSize="20" (tap)="onDrawerButtonTap()"></Label>
+                    <!--Label row="0" col="3" class="fa drwawerstyle" style="color:white"
+                        text="&#xf002;" borderWidth="" borderColor="transparent"
+                        backgroundColor="transparent" fontSize="20" (tap)="onDrawerButtonTap()"></Label-->
+                </GridLayout>
+                <GridLayout row="1" rows="*"  columns="auto,auto"padding="5" style="padding-left:15;" paddingTop="5">                    
+					<Label row="0" col="0"  class="fa drwawerstyle" style="color:white"
+                        text="&#xf0a2;" borderColor="transparent"
+                        backgroundColor="transparent" fontSize="16"></Label>
+					<Label row="0" col="1"  text=" Recent Notifications" class="fa title sf"
+                        textAlignment="left" horizontalAlignment="left"></Label>  
+					
+                </GridLayout>
+                <ScrollView row="2" orientation="horizontal"
+                    scrollBarIndicatorVisible="false" paddingRight="15">
+                    <StackLayout orientation="horizontal">
+                        <StackLayout class="header-tiles" androidElevation="4"
+                            [shadow]="fabShadow" orientation="horizontal">
+                            <StackLayout width="200px" color="#000">
+                                <Image src="~/images/warbol.png" width="140px"
+                                    class="addbox" borderRadius="20px"
+                                    marginTop="40px"></Image>
+                            </StackLayout>
+                            <StackLayout width="400px" color="#000"
+                                verticalAlignment="center" orientation="vertical">
+                                <StackLayout orientation="horizontal" padding="5px">
+                                    <Image src="~/images/Upper_Semicolon.png"
+                                        width="18px" verticalAlignment="top"
+                                        marginTop="0px"></Image>
+                                    <Label class="dashtestimonial" text='Lorem ipsum is placeholder text commonly used in the graphics, print, & publishing industries for previewing visual mockups.'
+                                        horizontalAlignment="left" padding="5px"
+                                        fontSize="12px" textAlignment="left"
+                                        textWrap="true" marginTop="0px">
+                                    </Label>
+                                </StackLayout>
+                                <Image src="~/images/Lower_Semicolon.png"
+                                    width="18px" horizontalAlignment="right"
+                                    marginRight="25px" marginTop="-28px"></Image>
+                                <Label text='Jason White'
+                                    horizontalAlignment="left" class="emptitle"
+                                    fontSize="16px" color="#0097FF"
+                                    fontWeight="500" textWrap="true">
+                                </Label>
+                                <Label text='CEO'
+                                    horizontalAlignment="left" fontSize="12px"
+                                    color="#8699AC" fontWeight="300" class="empdesignation"
+                                    textWrap="true">
+                                </Label>
+                            </StackLayout>
+                        </StackLayout>
+
+                        <StackLayout class="header-tiles" androidElevation="4"
+                            [shadow]="fabShadow" orientation="horizontal">
+                            <StackLayout width="200px" color="#000">
+                                <Image src="~/images/warbol.png" width="140px"
+                                    class="addbox" borderRadius="20px"
+                                    marginTop="40px"></Image>
+                            </StackLayout>
+                            <StackLayout width="400px" color="#000"
+                                verticalAlignment="center" orientation="vertical">
+                                <StackLayout orientation="horizontal" padding="5px">
+                                    <Image src="~/images/Upper_Semicolon.png"
+                                        width="18px" verticalAlignment="top"
+                                        marginTop="0px"></Image>
+                                    <Label text='Lorem ipsum is placeholder text commonly used in the graphics, print, & publishing industries for previewing visual mockups.'
+                                        horizontalAlignment="left" padding="5px"
+                                        fontSize="12px" fontWeight="300"
+                                        textAlignment="left" textWrap="true"
+                                        marginTop="0px">
+                                    </Label>
+                                </StackLayout>
+                                <Image src="~/images/Lower_Semicolon.png"
+                                    width="18px" horizontalAlignment="right"
+                                    marginRight="25px" marginTop="-28px"></Image>
+                                <Label text='Jason White'
+                                    horizontalAlignment="left" class="emptitle"
+                                    fontSize="16px" color="#0097FF"
+                                    fontWeight="500" textWrap="true">
+                                </Label>
+                                <Label text='CEO'
+                                    horizontalAlignment="left" fontSize="12px"
+                                    color="#8699AC" fontWeight="300" class="empdesignation"
+                                    textWrap="true">
+                                </Label>
+                            </StackLayout>
+                        </StackLayout>
+
+
+                        <StackLayout class="header-tiles" androidElevation="4"
+                            [shadow]="fabShadow" orientation="horizontal">
+                            <StackLayout width="200px" color="#000">
+                                <Image src="~/images/warbol.png" width="140px"
+                                    class="addbox" borderRadius="20px"
+                                    marginTop="40px"></Image> 
+                            </StackLayout>
+                            <StackLayout width="400px" color="#000"
+                                verticalAlignment="center" orientation="vertical">
+                                <StackLayout orientation="horizontal" padding="5px">
+                                    <Image src="~/images/Upper_Semicolon.png"
+                                        width="18px" verticalAlignment="top"
+                                        marginTop="0px"></Image>
+                                    <Label text='Lorem ipsum is placeholder text commonly used in the graphics, print, & publishing industries for previewing visual mockups.'
+                                        horizontalAlignment="left" padding="5px"
+                                        fontSize="12px" fontWeight="300"
+                                        textAlignment="left" textWrap="true"
+                                        marginTop="0px">
+                                    </Label>
+                                </StackLayout>
+                                <Image src="~/images/Lower_Semicolon.png"
+                                    width="18px" horizontalAlignment="right"
+                                    marginRight="25px" marginTop="-28px"></Image>
+                                <Label text='Jason White'
+                                    horizontalAlignment="left" class="emptitle"
+                                    fontSize="16px" color="#0097FF"
+                                    fontWeight="500" textWrap="true">
+                                </Label>
+                                <Label text='CEO'
+                                    horizontalAlignment="left" fontSize="12px"
+                                    color="#8699AC" fontWeight="300" class="empdesignation"
+                                    textWrap="true">
+                                </Label>
+                            </StackLayout>
+                        </StackLayout>
+
+                        <StackLayout class="header-tiles" orientation="horizontal"
+                            androidElevation="4" [shadow]="fabShadow">
+                            <StackLayout width="200px" color="#000">
+                                <Image src="~/images/warbol.png" width="140px"
+                                    class="addbox" borderRadius="20px"
+                                    marginTop="40px"></Image>
+                            </StackLayout>
+                            <StackLayout width="400px" color="#000"
+                                verticalAlignment="center" orientation="vertical">
+                                <StackLayout orientation="horizontal" padding="5px">
+                                    <Image src="~/images/Upper_Semicolon.png"
+                                        width="18px" verticalAlignment="top"
+                                        marginTop="0px"></Image>
+                                    <Label text='Lorem ipsum is placeholder text commonly used in the graphics, print, & publishing industries for previewing visual mockups.'
+                                        horizontalAlignment="left" padding="5px"
+                                        fontSize="12px" fontWeight="300"
+                                        textAlignment="left" textWrap="true"
+                                        marginTop="0px">
+                                    </Label>
+                                </StackLayout>
+                                <Image src="~/images/Lower_Semicolon.png"
+                                    width="18px" horizontalAlignment="right"
+                                    marginRight="25px" marginTop="-28px"></Image>
+                                <Label text='Jason White'
+                                    horizontalAlignment="left" class="emptitle"
+                                    fontSize="16px" color="#0097FF"
+                                    fontWeight="500" textWrap="true">
+                                </Label>
+                                <Label text='CEO'
+                                    horizontalAlignment="left" fontSize="12px"
+                                    color="#8699AC" fontWeight="300" class="empdesignation"
+                                    textWrap="true">
+                                </Label>
+                            </StackLayout>
+                        </StackLayout>
+                    </StackLayout>
+                </ScrollView>
+            </GridLayout>
+        </GridLayout>
+    </ScrollView>
+<GridLayout rows="*" row="1" backgroundColor="#F0F1F4" marginTop="20">
+        <ScrollView class="page" verticalAlignment="top">
+            <GridLayout rows="*">
+                <StackLayout row="0" class="home-panel" backgroundColor="#F0F1F4"
+                    verticalAlignment="top">
+                    <StackLayout width="100%" orientation="horizontal"
+                        stretchLastChild="false" style="/*padding-top:15;margin-top:5px;*/">
+                        <StackLayout width="33%" flexGrow="1"
+                            androidElevation="1"  (tap)="getzwemschool()">
+                            <StackLayout  class="dashicon" backgroundColor="#1EB2E8"  verticalAlignment="center" horizontalAlignment="center" >
+                                <img src="~/images/swimmingicon2.png" width="52" height="52" />
+                            </StackLayout>
+                            <StackLayout>
+                                <Label text="Zwemschool" fontSize="12"  color="#1EB2E8"
+                                    fontWeight="bold" textWrap="true" class="home-icon-label"></Label>
+                            </StackLayout>
+                        </StackLayout>
+                        <StackLayout width="33%"  androidElevation="1"  (tap)="getswimminglesson()">
+                            <StackLayout  class="dashicon"  verticalAlignment="center" horizontalAlignment="center" >                                
+							<Label text="&#xf0f6;" fontSize="36" color="#FFFFFF" fontWeight="bold"  textWrap="true" class="fa" ></Label>
+                            </StackLayout>
+                            <StackLayout>
+                                <Label text="Swimming Lessons" fontSize="12" color="#1EB2E8"
+                                    fontWeight="bold" textWrap="true" class="home-icon-label"></Label>
+                            </StackLayout>
+                        </StackLayout>
+                        <StackLayout width="33%"  androidElevation="1"  (tap)="getfreetriallesson()">
+                            <StackLayout  class="dashicon"   verticalAlignment="center" horizontalAlignment="center" >                                
+							<Label text="&#xf1c8;" fontSize="36" color="#FFFFFF" fontWeight="bold"  textWrap="true" class="fa" ></Label>
+                            </StackLayout>
+                            <StackLayout>
+                                <Label text="Free Trial Lesson" fontSize="14"
+                                    fontSize="12" color="#1EB2E8" fontWeight="bold"
+                                    textWrap="true" class="home-icon-label"></Label>
+                            </StackLayout>
+                        </StackLayout>
+                    </StackLayout>
+
+
+                    <StackLayout orientation="horizontal" width="100%"
+                        stretchLastChild="false" style="padding-top:5;margin-top:5px;">
+						<StackLayout width="33%"  androidElevation="1"  (tap)="getparentslogin()">
+                            <StackLayout  class="dashicon" verticalAlignment="center" horizontalAlignment="center" >                                
+						 <Label text="&#xf2be;" fontSize="45" color="#FFFFFF" fontWeight="bold"
+                                    textWrap="true" class="fa" ></Label>		
+                            </StackLayout>
+                            <StackLayout>
+                                <Label text="Parents Login" fontSize="14"
+                                    fontSize="12" color="#1EB2E8" fontWeight="bold"
+                                    textWrap="true" class="home-icon-label"></Label>
+                            </StackLayout>
+                        </StackLayout>              
+                        <StackLayout width="33%" androidElevation="1"  (tap)="getrequestinfo()">
+                            <StackLayout class="dashicon" verticalAlignment="center" horizontalAlignment="center">
+                               <Label text="&#xf05a;" fontSize="45" color="#FFFFFF" fontWeight="bold" textWrap="true" class="fa" ></Label>		
+								
+                            </StackLayout>
+                            <StackLayout>
+                                <Label text="Request Info." fontSize="12" color="#1EB2E8"
+                                    fontWeight="bold" textWrap="true" class="home-icon-label"></Label>
+                            </StackLayout>
+                        </StackLayout>
+                        <StackLayout width="33%" androidElevation="1"  (tap)="getfaq()">
+                            <StackLayout class="dashicon" verticalAlignment="center" horizontalAlignment="center">
+								 <Label text="&#xf29c;" fontSize="45" color="#FFFFFF" fontWeight="bold" textWrap="true" class="fa" ></Label> 
+                            </StackLayout>
+                            <StackLayout>
+                                <Label text="FAQ" fontSize="12" color="#1EB2E8"
+                                    fontWeight="bold" textWrap="true" class="home-icon-label"></Label>
+                            </StackLayout>
+                        </StackLayout>
+                    </StackLayout>
+
+
+
+                    <StackLayout orientation="horizontal" width="100%"
+                        stretchLastChild="false" style="padding-top:5;margin-top:5px;"
+                        textAlignment="center">                   
+                        <StackLayout width="30%" class="dashicon"
+                            backgroundColor="transparent" >
+                        </StackLayout>
+                        <StackLayout width="33%" 
+                            androidElevation="1"  (tap)="getcontactinfo()">
+                            <StackLayout class="dashicon"verticalAlignment="center" horizontalAlignment="center">
+								 <Label text="&#xf095;" fontSize="40" color="#FFFFFF" fontWeight="bold" textWrap="true" class="fa" ></Label> 
+                            </StackLayout>
+                            <StackLayout>
+                                <Label text="Contact Info." fontSize="12"
+                                    color="#1EB2E8" fontWeight="bold"
+                                    textWrap="true" class="home-icon-label"></Label>
+                            </StackLayout>
+                        </StackLayout>
+                        <StackLayout width="30%" class="dashicon"
+                            backgroundColor="transparent" >
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </GridLayout>
+        </ScrollView>
+    </GridLayout>
+
+
+    <!--GridLayout row="2" height="40" verticalAlignment="bottom" class="boring"
+        androidElevation="4" [shadow]="fabShadow">
+        <GridLayout columns="*, *, *" height="55">
+            <GridLayout #tabHighlight col="0"></GridLayout>
+            <GridLayout col="0" horizontalAlignment="center"
+                verticalAlignment="center" textAlignment="center">
+                <Label col="0" text="&#xf015; HOME" color="#fff"
+                    horizontalAlignment="center" verticalAlignment="center"
+                    textAlignment="center" textAlignment="center" class="fa"
+                    backgroundColor="#F39C12" padding="14px" fontSize="11"
+                    androidElevation="7" borderRadius="50px" [shadow]="fabShadow"
+                    (tap)="getdashboard()"></Label>               
+            </GridLayout>
+            <GridLayout col="1" >               
+                <Image col="0" src="~/images/Me.png" marginTop="5%" (tap)="getmedashboard()"
+                    textAlignment="center" width="35px" height="34px"></Image>               
+            </GridLayout>
+            <GridLayout col="2" >
+                <Image col="0" src="~/images/My_Team.png" marginTop="5%"
+                    (tap)="getmedashboard()" textAlignment="center" width="35px"
+                    height="34px"></Image>               
+            </GridLayout>
+        </GridLayout>
+    </GridLayout-->
+</GridLayout>

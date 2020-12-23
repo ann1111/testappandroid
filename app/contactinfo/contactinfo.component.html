@@ -1,0 +1,53 @@
+<GridLayout rows="auto,*,auto" backgroundColor="#F0F1F4">
+    <StackLayout row="0" scrollBarIndicatorVisible="false" paddingBottom="10">
+        <GridLayout rows="auto">
+            <GridLayout row="0" rows="*" class="header">
+                <GridLayout row="0" rows="*" columns="*,auto,*" padding="15"
+                    paddingBottom="0px">
+                    <Label row="0" col="0" class="fa drwawerstyle" style="color:white"
+                        text="&#xf053;" borderWidth="" borderColor="transparent"
+                        backgroundColor="transparent" fontSize="20" (tap)="onDrawerButtonTap()"
+                        horizontalAlignment="left" textAlignment="left" ></Label>
+                    <Label row="0" col="1" class="fa" style="color:white;text-transform:capitalize;" 
+                        text="Contact Info."  backgroundColor="transparent" horizontalAlignment="center" fontWeight="bold" fontSize="24"  textAlignment="center" textWrap="true"></Label>
+                  
+                </GridLayout>
+                <!--GridLayout row="1" rows="*" padding="1" marginLeft="9px"
+                    paddingLeft="19px" paddingTop="15px">  
+                    <Label row="0" text="On Boarding" class="title sf"
+                        textAlignment="left" horizontalAlignment="left"></Label>
+                </GridLayout-->
+            </GridLayout>
+        </GridLayout>
+    </StackLayout>
+    <GridLayout row="1" backgroundColor="#F0F1F4" marginTop="5px">
+	<StackLayout>
+        <ScrollView class="page" verticalAlignment="top">
+            <GridLayout>
+                <StackLayout  class="home-panel" backgroundColor="#F0F1F4" verticalAlignment="top" style="height:95%;margin-bottom:10"  sdkExampleTitle sdkToggleNavButton>	
+						
+						<StackLayout class="itemTemplateStackLayout" width="100%" orientation="vertical" width="100%" height="98%" margin="10" marginBottom="1" marginTop="9" backgroundColor="#ffffff" verticalAlignment="top"  borderRadius="15px" androidElevation="3"   class="card">
+                        <ScrollView height="100%">
+						<StackLayout orientation="vertical" width="100%">
+
+						<StackLayout padding="10px" padding="35px" width="100%"   style="border-bottom: 1px dotted #000;border-color:#000;/*border-width: 0 0 1 0;*/border-style: dashed;">
+						<StackLayout orientation="vertical" width="100%">
+						<Label text="{{input.heading}}" fontSize="17px" color="#4494B4" textWrap="true"  fontWeight="500" marginBottom="3px"></Label>
+						<Label text="{{input.heading2}}" fontSize="17px" color="#000000" textWrap="true"  fontWeight="500" marginBottom="3px"></Label>
+						<Label text="{{input.address1}}" fontSize="13px" color="#000000" textWrap="true" marginTop="5" fontWeight="200" marginBottom="3px"></Label>
+						<Label text="{{input.address2}}" fontSize="13px" color="#000000" textWrap="true" marginTop="5" fontWeight="200" marginBottom="3px"></Label>
+						<Label text="&#xf095; {{input.phoneno}}"  textAlignment="center" class="fa" marginTop="7" fontSize="14px" color="#4494B4" textWrap="true"  fontWeight="200" marginBottom="7px"    (tap)="callHome('0202050596')" ></Label>
+						<Label text="&#xf003; {{input.email}}" class="fa" marginTop="5" fontSize="14px" textAlignment="center" color="#4494B4" textWrap="true"  marginBottom="7px" fontWeight="200" (tap)="sendemail('info@zwemschool-amsterdam.nl')"></Label>
+                        					
+						</StackLayout>										
+						</StackLayout>	
+						</StackLayout>
+						</ScrollView>						
+						</StackLayout>
+				</StackLayout>
+            </GridLayout>
+        </ScrollView>
+		</StackLayout>
+		<ActivityIndicator [busy]="processing" width="42" height="42" rowSpan="3"></ActivityIndicator>
+    </GridLayout>
+</GridLayout>
